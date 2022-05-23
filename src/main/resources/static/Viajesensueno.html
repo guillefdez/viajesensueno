@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes de Ensueño</title>
+    <link rel="stylesheet" type="text/css" href="CSS/ViajesEnsueno.css" media="all" />
+    <script type="text/javascript" src="js/ViajesEnsueno.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <img class="logo" src="images/logo_small.png">
+    <div id="contenido">
+        <div class="padre">
+            <div class="filtros-iniciales">
+                <p style="display: inline">Filtros: </p>
+                <button id="asia" type="button" class="btn btn-light" onclick="filtrar('asia')">Asia</button>
+                <button id="europa" type="button" class="btn btn-light" onclick="filtrar('europa')">Europa</button>
+                <button id="america" type="button" class="btn btn-light" onclick="filtrar('america')">America</button>
+                <button id="africa" type="button" class="btn btn-light" onclick="filtrar('africa')">Africa</button>
+                <button id="oceania" type="button" class="btn btn-light" onclick="filtrar('oceania')">Oceania</button>
+            </div>
+            <div class="izquierda">
+                <button id="logout" type="button" class="btn btn-default btn-sm" onclick="logout()">
+                    <span class="glyphicon glyphicon-log-out"></span> Log out
+                </button>
+            </div>
+            <div class="izquierda reservas">
+                <button id="ver-reservas" type="button" class="btn btn-default btn-sm" onclick="verReservas()">
+                    Reservas
+                </button>
+            </div>
+            <div class="izquierda reservas">
+                <button id="ver-ofertas" type="button" class="btn btn-success" onclick="verOfertas()">
+                    Ofertas
+                </button>
+            </div>
+            <div class="izquierda reservas">
+                <button id="ver-favoritos" type="button" class="btn btn-danger" onclick="paginaFavoritos()">
+                    Favoritos
+                </button>
+            </div>
+            <div class="izquierda reservas">
+                <button id="ver-viaje" type="button" class="btn btn-warning" onclick="refrescar()">
+                    Viajes
+                </button>
+            </div>
+        </div>
+        <h2 id="titulo">¡Los mejores viajes por el mundo!</h2>
+        <h2 id="viajes-encontrados"></h2>
+        <hr size="1px" color="black" />
+        <div id="añadir-viajes"></div>
+    </div>
+</body>
+</html>
